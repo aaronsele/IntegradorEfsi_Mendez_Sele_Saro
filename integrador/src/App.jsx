@@ -8,7 +8,7 @@ import EventoDetalle from "./pages/EventoDetalle";
 import Form from "./pages/Form";
 import MisEventos from "./pages/MisEventos";
 import UbicacionesList from "./pages/UbicacionesList";
-import Layout from './Layout/LayoutPage';
+import LayoutPage from './Layout/LayoutPage';
 
 const isAuthenticated = () => {
   return !!localStorage.getItem("token");
@@ -24,7 +24,7 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<LayoutPage />}>
         <Route path="eventos" element={<EventosList />} />
         <Route path="eventos/:id" element={<EventoDetalle />} />
         <Route path="crear-evento" element={<PrivateRoute><Form/></PrivateRoute>} />
