@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import './MisEventos.css';
 
 function MisEventos() {
   const [eventos, setEventos] = useState([]);

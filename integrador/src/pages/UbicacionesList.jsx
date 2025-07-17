@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import './UbicacionesList.css';
 
 function UbicacionesList() {
   const [ubicaciones, setUbicaciones] = useState([]);

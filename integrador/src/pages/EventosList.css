@@ -1,0 +1,53 @@
+div {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #0077cc;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  p {
+    text-align: center;
+    color: #555;
+    font-size: 1.1rem;
+  }
+  
+  button {
+    padding: 0.6rem 1.2rem;
+    margin: 1rem 0.5rem 0;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #005fa3;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  button + button {
+    margin-left: 0.5rem;
+  }
+  
+  div > button {
+    display: inline-block;
+  }
+  
+  div > .paginacion {
+    text-align: center;
+  }
+  

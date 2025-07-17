@@ -1,3 +1,5 @@
+import './EventoCard.css';
+
 function EventoCard({ evento }) {
     return (
       <div>
