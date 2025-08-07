@@ -1,0 +1,25 @@
+/* Importar estilos minimalistas elegantes */
+@import url('./css/styles.css');
+
+/* Estilos base adicionales para React */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Asegurar que el body no tenga el display flex por defecto de Vite */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: block; /* Cambiar de flex a block para el nuevo diseño */
+}
+
+/* Mantener algunos estilos de Vite para compatibilidad */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
