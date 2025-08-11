@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { jwtDecode } from 'jwt-decode';
-import '../css/styles.css';
+import './MisEventos.css'; ;
 
 export default function MisEventos() {
   const [eventos, setEventos] = useState([]);
@@ -101,7 +101,7 @@ export default function MisEventos() {
       <div style={{
         width: '100%',
         height: '220px',
-        backgroundImage: 'url(https://aablog.b-cdn.net/wp-content/uploads/2017/01/recitales-2017.jpg)',
+        backgroundImage: 'url(https://cdn0.casamientos.com.ar/vendor/9405/3_2/960/jpeg/69133500-86a9-4a3e-8468-ef9b306b069a_7_139405.jpeg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         borderRadius: '18px',

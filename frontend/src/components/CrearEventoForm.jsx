@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import './CrearEventoForm.css'; 
 
 export default function CrearEventoForm() {
   const [formData, setFormData] = useState({
@@ -93,7 +94,7 @@ export default function CrearEventoForm() {
       <div className="section">
         <div className="text-center mb-2xl">
           <h1>Crear Nuevo Evento</h1>
-          <p className="text-muted">Completa los datos para crear un evento increíble</p>
+          <p className="text-muted">Completa los datos para crear un evento EMOCIONANTE</p>
         </div>
 
         <div className="container-md">

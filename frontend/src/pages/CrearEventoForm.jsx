@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import './CrearEventoForm.css'; 
 
 export default function CrearEventoForm() {
   const [formData, setFormData] = useState({

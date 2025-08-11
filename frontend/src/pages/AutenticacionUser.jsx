@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Login from "../components/Login";
 import Registro from "../components/Registro";
-import '../css/styles.css';
+import './AutenticacionUser.css'; 
 
 export default function AutenticacionUser() {
   const [modo, setModo] = useState("login");

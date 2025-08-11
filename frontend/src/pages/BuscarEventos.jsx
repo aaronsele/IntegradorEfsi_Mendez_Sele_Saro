@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import EventoCard from '../components/EventoCard';
-import '../css/styles.css';
+import './BuscarEventos.css'; 
 
 export default function BuscarEventos() {
   const [eventos, setEventos] = useState([]);
@@ -55,9 +55,7 @@ export default function BuscarEventos() {
     fetchEventos();
   };
 
-  // Solo mostrar paginación si:
-  // 1. Hay eventos
-  // 2. Y (hay más páginas O estamos en una página > 1)
+
   const mostrarPaginacion = eventos.length > 0 && (hasMore || page > 1);
 
   return (
@@ -65,7 +63,7 @@ export default function BuscarEventos() {
       <div style={{
         width: '100%',
         height: '220px',
-        backgroundImage: 'url(https://indiehoy.com/wp-content/uploads/2018/09/49-cutcopy_matiascasalh-7.jpg)',
+        backgroundImage: 'url(https://cdn0.casamientos.com.ar/vendor/8325/3_2/1280/jpg/ey-102_7_168325-162500372254161.jpeg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         borderRadius: '18px',
@@ -147,7 +145,7 @@ export default function BuscarEventos() {
           </div>
         )}
 
-        {/* Paginación */}
+
         {mostrarPaginacion && (
           <div className="flex justify-center gap-md mt-2xl">
             <button

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import './DetalleEvento.css'; 
+
 
 export default function DetalleEvento() {
   const { id } = useParams();

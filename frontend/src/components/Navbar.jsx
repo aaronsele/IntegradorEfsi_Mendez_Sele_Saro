@@ -5,7 +5,7 @@ import BuscarEventos from '../pages/BuscarEventos.jsx'
 import CrearEventoForm from '../pages/CrearEventoForm.jsx'
 import MisEventos from '../pages/MisEventos.jsx'
 import Ubicaciones from '../pages/Ubicaciones.jsx'
-import '../css/styles.css';
+import './Navbar.css'; 
 
 function Navbar() {
   return (
@@ -13,7 +13,7 @@ function Navbar() {
       <div className="container navbar-container">
         <Link to="/" className="navbar-brand">SoundScout</Link>
         <ul className="navbar-nav">
-          <li><Link to="/" className="nav-link">Home</Link></li>
+          <li><Link to="/" className="nav-link">Inicio</Link></li>
           <li><Link to="/AutenticacionUser" className="nav-link">Autenticarme</Link></li>
           <li><Link to="/BuscarEventos" className="nav-link">Buscar Eventos</Link></li>
           <li><Link to="/Ubicaciones" className="nav-link">Ubicaciones</Link></li>

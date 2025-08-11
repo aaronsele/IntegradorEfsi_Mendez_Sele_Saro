@@ -1,110 +1,139 @@
+/* Contenedor general y sección */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-  
-  .section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .container-sm {
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  .card {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .form-group {
-    margin-bottom: 1.5rem;
-  }
-  
-  .form-label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-  }
-  
-  .form-input {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .btn {
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .btn-primary {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .btn-primary:hover {
-    background-color: #0056b3;
-  }
-  
-  .btn-lg {
-    font-size: 1rem;
-  }
-  
-  .w-full {
-    width: 100%;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  
-  .text-muted {
-    color: #6c757d;
-  }
-  
-  .text-red-600 {
-    color: #e3342f;
-  }
-  
-  .text-sm {
-    font-size: 0.875rem;
-  }
-  
-  .mt-sm {
-    margin-top: 0.5rem;
-  }
-  
-  .mb-xl {
-    margin-bottom: 2rem;
-  }
-  
-  .mb-lg {
-    margin-bottom: 1.5rem;
-  }
-  
-  .p-md {
-    padding: 1rem;
-  }
-  
-  .rounded {
-    border-radius: 8px;
-  }
-  
-  .border {
-    border: 1px solid #ccc;
-  }
-  
-  .border-red-200 {
-    border-color: #feb2b2;
-  }
-  
+  max-width: 480px;
+  margin: 3rem auto;
+  padding: 1rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.section {
+  padding: 1rem;
+}
+
+/* Contenedor pequeño */
+.container-sm {
+  width: 100%;
+}
+
+/* Card */
+.card {
+  background: linear-gradient(135deg, #e65c20, #c91919);
+  padding: 2.5rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 9px 25px rgba(198, 25, 25, 0.5);
+  color: white;
+}
+
+/* Texto centrado y márgenes */
+.text-center {
+  text-align: center;
+}
+
+.mb-xl {
+  margin-bottom: 2.5rem;
+}
+
+.mb-lg {
+  margin-bottom: 1.5rem;
+}
+
+.text-muted {
+  color: #d9d9d9;
+  font-style: italic;
+  user-select: none;
+}
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+/* Labels */
+.form-label {
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  user-select: none;
+}
+
+/* Inputs */
+.form-input {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 2px solid #c91919;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.2s ease;
+  background: #fff;
+  color: #222;
+}
+
+.form-input:focus {
+  border-color: #e65c20;
+  box-shadow: 0 0 10px rgba(230, 92, 32, 0.8);
+}
+
+/* Mensajes de error */
+.text-red-600 {
+  color: #b00000;
+  font-weight: 600;
+  user-select: none;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.mt-sm {
+  margin-top: 0.4rem;
+}
+
+/* Botón principal */
+.btn-primary {
+  background: #c91919;
+  color: white;
+  border: none;
+  padding: 0.85rem 1.7rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 5px 15px rgba(201, 25, 25, 0.7);
+  user-select: none;
+  width: 100%;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #e65c20;
+  transform: scale(1.05);
+  box-shadow: 0 7px 22px rgba(230, 92, 32, 0.85);
+}
+
+.btn-primary:disabled {
+  background: #a43b3b;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Bordes redondeados para mensajes */
+.rounded {
+  border-radius: 10px;
+}
+
+/* Fondos y bordes para mensajes de error */
+.bg-red-50 {
+  background-color: #ffe1e1;
+}
+
+.border-red-200 {
+  border: 1.8px solid #ff5c5c;
+}
+
+/* Espaciados para mensajes */
+.p-md {
+  padding: 1rem;
+}
+

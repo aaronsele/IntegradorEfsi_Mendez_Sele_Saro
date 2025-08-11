@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './EventoCard.css'; 
 
 const EventoCard = ({ evento }) => {
   const { name, description, start_date, duration_in_minutes, price, max_assistance, enabled_for_enrollment } = evento;

@@ -1,0 +1,219 @@
+/* Contenedor general */
+.container {
+  max-width: 1080px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+/* Sección y espaciados */
+.section {
+  padding-bottom: 3rem;
+}
+
+.mb-2xl {
+  margin-bottom: 3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Imagen de cabecera */
+.container > div[style] {
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  margin-bottom: 2rem;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* Tarjetas */
+.card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  padding: 1.8rem 2rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Grid para las cards */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Cabecera de card */
+.card-header {
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #c91919;
+  margin: 0;
+}
+
+.card-subtitle {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+  font-style: italic;
+}
+
+/* Cuerpo de card */
+.card-body {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Botones */
+.btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #c91919;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #e65c20;
+}
+
+.btn-secondary {
+  background-color: #777;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #555;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: none;
+  color: #c91919;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.btn-ghost:hover {
+  color: #7a0d0d;
+}
+
+/* Flex y gaps para botones */
+.flex {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.gap-md {
+  gap: 1rem;
+}
+
+.mb-lg {
+  margin-bottom: 1.5rem;
+}
+
+/* Inputs y textarea para edición */
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1.8px solid #ddd;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #c91919;
+  outline: none;
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+/* Form-group para agrupar labels e inputs */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #444;
+}
+
+/* Badges para info rápida */
+.badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 14px;
+  background-color: #eee;
+  color: #555;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+  user-select: none;
+}
+
+.badge-primary {
+  background-color: #c91919;
+  color: white;
+}
+
+.badge-secondary {
+  background-color: #444;
+  color: white;
+}
+
+/* Mensajes de error */
+.text-red-600 {
+  color: #c91919;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* Loading animado */
+.loading {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #c91919;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 2rem auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

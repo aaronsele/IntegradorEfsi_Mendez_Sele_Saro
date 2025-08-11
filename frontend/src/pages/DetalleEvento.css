@@ -1,0 +1,185 @@
+/* Container y sección */
+.container {
+  max-width: 1080px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.section {
+  padding-bottom: 3rem;
+}
+
+/* Márgenes y espaciados */
+.mb-lg {
+  margin-bottom: 1.5rem;
+}
+
+.space-y-lg > * + * {
+  margin-top: 1.5rem;
+}
+
+/* Botón de volver */
+.btn-ghost {
+  background: transparent;
+  border: none;
+  color: #c91919;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.btn-ghost:hover {
+  color: #7a0d0d;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Card blanca con sombra y bordes redondeados */
+.card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  padding: 1.8rem 2rem;
+  color: #333;
+}
+
+/* Cabecera de card */
+.card-header {
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #c91919;
+  margin: 0;
+}
+
+.card-subtitle {
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+  font-style: italic;
+}
+
+/* Cuerpo de la card */
+.card-body {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Botón principal */
+.btn-lg {
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 1.15rem;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn-primary {
+  background-color: #c91919;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #e65c20;
+}
+
+.btn-secondary {
+  background-color: #777;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #555;
+}
+
+/* Badges para info rápida */
+.badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 14px;
+  background-color: #eee;
+  color: #555;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+  user-select: none;
+}
+
+.badge-primary {
+  background-color: #c91919;
+  color: white;
+}
+
+.badge-secondary {
+  background-color: #444;
+  color: white;
+}
+
+/* Flex utilitario */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.gap-md {
+  gap: 1rem;
+}
+
+/* Mensajes de error */
+.bg-red-50 {
+  background-color: #ffe5e5;
+}
+
+.border-red-200 {
+  border: 1.5px solid #f5a1a1;
+}
+
+.text-red-600 {
+  color: #c91919;
+  font-weight: 600;
+  margin: 0;
+  font-size: 1rem;
+  user-select: none;
+  padding: 0.5rem 0;
+}
+
+/* Mensajes de info */
+.bg-blue-50 {
+  background-color: #d9e7ff;
+}
+
+.border-blue-200 {
+  border: 1.5px solid #a7c1ff;
+}
+
+.text-blue-600 {
+  color: #366ed6;
+  font-style: italic;
+  font-weight: 600;
+  margin: 0;
+  font-size: 1rem;
+  user-select: none;
+  padding: 0.5rem 0;
+}

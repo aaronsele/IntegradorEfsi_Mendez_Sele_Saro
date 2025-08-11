@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import './Ubicaciones.css'; 
 
 export default function Ubicaciones() {
   const [ubicaciones, setUbicaciones] = useState([]);
@@ -83,7 +84,7 @@ export default function Ubicaciones() {
       <div style={{
         width: '100%',
         height: '220px',
-        backgroundImage: 'url(https://www.infozona.com.ar/storage/2023/01/Recitales.jpg)',
+        backgroundImage: 'url(https://static.todamateria.com.br/upload/pl/an/planetaterra-cke.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         borderRadius: '18px',

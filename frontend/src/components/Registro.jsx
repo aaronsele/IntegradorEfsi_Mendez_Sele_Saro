@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import '../css/styles.css';
+import './Registro.css'; 
 
 export default function Registro() {
   const [datos, setDatos] = useState({

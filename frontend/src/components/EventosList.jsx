@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import EventoCard from '../components/EventoCard';
 import axios from 'axios';
+import './EventosList.css'; 
 
 const EventosList = () => {
   const [eventos, setEventos] = useState([]);
@@ -17,10 +18,9 @@ const EventosList = () => {
         
         if (Array.isArray(res.data)) {
           setEventos(res.data);
-          // Solo hay más páginas si recibimos exactamente el límite de eventos
-          // y no es la primera página (para evitar mostrar paginación innecesaria)
+      
           setHayMas(res.data.length === limite);
-        } else {
+    } else {
           console.error("Respuesta inesperada del servidor:", res.data);
           setEventos([]);
           setHayMas(false);
@@ -49,9 +49,7 @@ const EventosList = () => {
     }
   };
 
-  // Solo mostrar paginación si:
-  // 1. Hay eventos
-  // 2. Y (hay más páginas O estamos en una página > 1)
+
   const mostrarPaginacion = eventos.length > 0 && (hayMas || pagina > 1);
 
   return (

@@ -1,84 +1,89 @@
 .card {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    transition: transform 0.2s ease;
-  }
-  
-  .card:hover {
-    transform: scale(1.01);
-  }
-  
-  .card-header {
-    margin-bottom: 1rem;
-  }
-  
-  .card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .card-subtitle {
-    font-size: 0.9rem;
-    color: #666;
-  }
-  
-  .card-body p {
-    margin-bottom: 1rem;
-  }
-  
-  .badge {
-    display: inline-block;
-    padding: 0.3em 0.7em;
-    border-radius: 999px;
-    font-size: 0.75rem;
-    background-color: #e0e0e0;
-    color: #333;
-    margin-right: 0.5rem;
-  }
-  
-  .badge-primary {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .badge-secondary {
-    background-color: #6c757d;
-    color: white;
-  }
-  
-  .text-muted {
-    color: #6c757d;
-  }
-  
-  .text-primary {
-    color: #007bff;
-  }
-  
-  .text-secondary {
-    color: #6c757d;
-  }
-  
-  .mt-md {
-    margin-top: 1rem;
-  }
-  
-  .flex {
-    display: flex;
-  }
-  
-  .gap-md {
-    gap: 1rem;
-  }
-  
-  .flex-wrap {
-    flex-wrap: wrap;
-  }
-  
-  .items-center {
-    align-items: center;
-  }
-  
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 87, 34, 0.3);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(255, 87, 34, 0.4);
+}
+
+.card-header {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgba(255, 87, 34, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #b71c1c; /* rojo intenso */
+}
+
+.card-subtitle {
+  font-size: 0.9rem;
+  color: #e65100; /* naranja oscuro */
+}
+
+.card-body p {
+  margin-bottom: 1rem;
+  color: #4e342e; /* marrón cálido */
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.3em 0.7em;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background-color: rgba(255, 138, 101, 0.2);
+  color: #bf360c;
+  margin-right: 0.5rem;
+  border: 1px solid rgba(255, 87, 34, 0.3);
+}
+
+.badge-primary {
+  background-color: #e53935;
+  color: white;
+}
+
+.badge-secondary {
+  background-color: #ff7043;
+  color: white;
+}
+
+.text-muted {
+  color: #8d6e63;
+}
+
+.text-primary {
+  color: #d32f2f;
+}
+
+.text-secondary {
+  color: #ff7043;
+}
+
+.mt-md {
+  margin-top: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-md {
+  gap: 1rem;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}

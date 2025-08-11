@@ -1,0 +1,178 @@
+/* Hero Section */
+.hero {
+  height: 75vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  color: white;
+  position: relative;
+  text-shadow: 0 0 8px rgba(0,0,0,0.9);
+}
+
+/* Para que el container en el hero quede centrado y con padding */
+.hero-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+/* Títulos hero */
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  user-select: none;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+  user-select: none;
+}
+
+/* Animaciones fade in */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(15px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.2s ease forwards;
+}
+
+/* Animación slide desde la izquierda */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 1.2s ease forwards;
+}
+
+/* Botones en hero */
+.flex {
+  display: flex;
+}
+
+.gap-md {
+  gap: 1rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.btn-primary {
+  background: #c91919;
+  color: white;
+  border: none;
+  padding: 0.85rem 2.2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 5px 15px rgba(201, 25, 25, 0.7);
+  user-select: none;
+}
+
+.btn-primary:hover {
+  background: #e65c20;
+  transform: scale(1.07);
+  box-shadow: 0 7px 22px rgba(230, 92, 32, 0.85);
+}
+
+.btn-secondary {
+  background: #a43b3b;
+  color: white;
+  border: none;
+  padding: 0.85rem 2.2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+.btn-secondary:hover {
+  background: #c91919;
+  transform: scale(1.07);
+  box-shadow: 0 5px 15px rgba(201, 25, 25, 0.7);
+}
+
+/* Section pequeña para eventos */
+.section-sm {
+  padding: 3rem 0 6rem 0;
+  background: #fff;
+}
+
+/* Container general */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+/* Titulos y subtitulos */
+.text-center {
+  text-align: center;
+}
+
+.mb-2xl {
+  margin-bottom: 2.5rem;
+}
+
+.text-muted {
+  color: #fbfbfb;
+  font-style: italic;
+  user-select: none;
+}
+
+/* Grid para cards */
+.grid {
+  display: grid;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gap-xl {
+  gap: 2rem;
+}
+
+/* Card fallback cuando no hay eventos */
+.card {
+  background: linear-gradient(135deg, #e65c20, #c91919);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(198, 25, 25, 0.45);
+  color: white;
+  user-select: none;
+}
+
+/* Margenes */
+.mt-md {
+  margin-top: 1rem;
+}
+
+.mt-lg {
+  margin-top: 2rem;
+}
+
+.mt-2xl {
+  margin-top: 3rem;
+}
